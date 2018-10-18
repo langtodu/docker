@@ -66,7 +66,7 @@ https://docs.docker.com/engine/reference/commandline/dockerd/#run-multiple-daemo
         $ sudo touch /etc/systemd/system/docker.service.d/http-proxy.conf
         # cat <<EOF >>/etc/systemd/system/docker.service.d/http-proxy.conf
         > [Service]
-        > Environment="HTTP_PROXY=http://202.117.10.66:65534/" "NO_PROXY=localhost,127.0.0.1,docker-registry.somecorporation.com[私有仓库]"
+        > Environment="HTTP_PROXY=http://ip:port/" "NO_PROXY=localhost,127.0.0.1,docker-registry.somecorporation.com[私有仓库]"
         > EOF
         ```
         -   重启
